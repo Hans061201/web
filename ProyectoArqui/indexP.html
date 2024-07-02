@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Lista de Asistencia</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #e0f7fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 5%;
+      }
+      .form-register {
+        width: 100%;
+        max-width: 400px;
+        background-color: #24303c;
+        padding: 20px;
+        border-radius: 8px;
+        font-family: calibri;
+        color: #fff;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+      }
+      .form-register h4 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .controls {
+        width: 100%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        border: 1px solid #1f53c5;
+        font-family: calibri;
+        font-size: 1em;
+        color: #fff;
+      }
+      .form-register .botons {
+        width: 100%;
+        border: none;
+        background: #1f53c5;
+        padding: 12px;
+        color: #fff;
+        margin: 10px 0;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .form-register .botons:hover {
+        background-color: #1a4cb5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/listar" class="form-register" id="listarForm">
+        <h4>Lista de Asistencia</h4>
+        <input
+          class="botons"
+          id="listar"
+          type="submit"
+          value="Reporte de asistencia de los alumnos"
+        />
+      </form>
+    </div>
+    <!-- <script>
+      document
+        .getElementById("listarForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Se registró su asistencia");
+          this.submit();
+        });
+    </script> -->
+  </body>
+</html>
